@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  {{partial "head.html" .}}
+  <body>
+    {{partial "header.html" .}}
+    {{partial "footer.html" .}}
+    {{ range first 1 (where .Data.Pages "Section" "comic") }}
+      {{ .Content }}
+    {{ end }}
+  </body>
+</html>

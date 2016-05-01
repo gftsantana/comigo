@@ -1,0 +1,11 @@
+    <header>
+      <h1>{{.Site.Title}}</h1>
+      <nav id="top-menu">
+        {{$currentNode := .}}
+        <ul>
+          {{range .Site.Menus.main}}
+          <li><a {{ if ($currentNode.IsMenuCurrent "main" .)}} class="menu-current" {{end}} href="{{.URL}}">{{.Name}}</a></li>
+          {{end}}
+        </ul>
+      </nav>
+    </header>
