@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+  {{partial "head.html" .}}
+  <body>
+    {{partial "header.html" .}}
+    {{partial "footer.html" .}}
+    <img src="{{.Params.src}}" class="comic"/>
+    {{.Content}}
+  </body>
+</html>

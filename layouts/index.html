@@ -5,7 +5,7 @@
     {{partial "header.html" .}}
     {{partial "footer.html" .}}
     {{ range first 1 (where .Data.Pages "Section" "comic") }}
-      {{ .Content }}
+      <img src="{{ .Params.src }}" alt="" class="comic"/>
     {{ end }}
   </body>
 </html>
