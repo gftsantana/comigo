@@ -12,25 +12,29 @@ header {
   padding: 0;
 }
 
-#top-menu ul {
+nav {
+  text-rendering: geometricPrecision;
+}
+
+nav ul {
   padding: 0;
 }
 
-#top-menu li {
+nav li {
   list-style: none;
   display: inline-block;
 }
 
-#top-menu li:not(:first-child) {
+nav li:not(:first-child) {
   padding-left: 3em;
 }
 
-#top-menu a {
+nav a {
   color: #595959;
   text-decoration: none;
 }
 
-#top-menu a:hover {
+nav a:hover {
   color: #7f7f7f;
   text-decoration: underline;;
 }
