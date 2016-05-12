@@ -3,10 +3,10 @@
   {{partial "head.html" .}}
   <body>
     {{partial "header.html" .}}
-    {{partial "pagination.html" .}}
+    {{partial "comic-navigation.html" .}}
     <img src="{{.Params.src}}" class="comic"/>
     {{.Content}}
-    {{partial "pagination.html" .}}
+    {{partial "comic-navigation.html" .}}
     {{partial "footer.html" .}}
   </body>
 </html>

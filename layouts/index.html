@@ -4,10 +4,10 @@
   <body>
     {{partial "header.html" .}}
     {{ range first 1 (where .Data.Pages "Section" "comic") }}
-      {{partial "pagination.html" .}}
+      {{partial "comic-navigation.html" .}}
       <img src="{{ .Params.src }}" alt="" class="comic"/>
       {{.Content}}
-      {{partial "pagination.html" .}}
+      {{partial "comic-navigation.html" .}}
     {{ end }}
 
     {{partial "footer.html" .}}
