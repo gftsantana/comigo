@@ -4,8 +4,11 @@
   <body>
     {{partial "header.html" .}}
     {{partial "comic-navigation.html" .}}
-    <img src="{{.Params.src}}" class="comic"/>
-    {{.Content}}
+    <article title="comic" class="comic">
+      <h1>{{.Title}}</h1>
+      <img src="{{.Params.src}}" class="comic"/>
+      {{.Content}}
+    </article>
     {{partial "comic-navigation.html" .}}
     {{partial "footer.html" .}}
   </body>
