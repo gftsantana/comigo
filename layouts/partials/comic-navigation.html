@@ -1,12 +1,12 @@
       <nav class="pagination-menu">
         <ul>
-          {{ with .Site.Params.first }}
-          <li><a href="{{.}}">&laquo; FIRST</a></li>
+          {{range last 1 (where .Site.Pages "Section" "comic")}}
+          <li><a href="{{.Permalink}}">&laquo; FIRST</a></li>
           {{end}}
           <li><a href="{{with .PrevInSection}}{{.Permalink}}{{end}}">&lsaquo; PREV</a></li>
           <li><a href="{{with .NextInSection}}{{.Permalink}}{{end}}">NEXT &rsaquo;</a></li>
-          {{ if isset .Site.Params "first"}}
-          <li><a href="{{.Site.BaseURL}}">LAST &raquo;</a></li>
+          {{range first 1 (where .Site.Pages "Section" "comic")}}
+          <li><a href="{{.Permalink}}">LAST &raquo;</a></li>
           {{end}}
         </ul>
       </nav>
