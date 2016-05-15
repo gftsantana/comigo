@@ -1,0 +1,7 @@
+  <nav>
+    <select class="comic-nav-dropdown" onclick="location = this.value;">
+      {{range .Site.Pages}}
+        <option value="{{.Permalink}}">{{.Title}}</option>
+      {{end}}
+    </select>
+  </nav>

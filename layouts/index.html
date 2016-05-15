@@ -8,9 +8,9 @@
       <h1>{{.Title}}</h1>
       <img src="{{ .Params.src }}" alt="" class="comic"/>
       {{.Content}}
+      {{partial "list-comic-navigation.html" .}}
       {{partial "comic-navigation.html" .}}
     {{ end }}
-
     {{partial "footer.html" .}}
   </body>
 </html>

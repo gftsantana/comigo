@@ -36,6 +36,10 @@ nav a:hover {
   text-decoration: underline;;
 }
 
+.comic-nav-dropdown {
+  display: inline-block;
+}
+
 .comic {
   max-width: 100%;
   margin: 0 auto;
